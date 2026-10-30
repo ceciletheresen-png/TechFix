@@ -1,0 +1,101 @@
+<a
+  href="#main-content"
+  (click)="$event.preventDefault(); mainFocus()"
+  class="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:font-semibold focus:shadow-lg"
+  >Skip to main content</a
+>
+
+<header class="sticky top-0 z-40 border-b border-navy-800 bg-navy-900 text-white">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+    <a routerLink="/" class="flex items-center gap-2 rounded-md text-lg font-bold tracking-tight">
+      <span class="rounded-lg bg-white p-1.5 text-navy-900"
+        ><app-icon name="wrench" [size]="20"
+      /></span>
+      TechFix
+    </a>
+    <nav aria-label="Main" class="hidden items-center gap-1 md:flex">
+      @for (l of links; track l.path) {
+        <a
+          [routerLink]="l.path"
+          routerLinkActive="bg-white/15"
+          ariaCurrentWhenActive="page"
+          [routerLinkActiveOptions]="{ exact: l.exact }"
+          class="rounded-md px-3 py-2 text-sm font-medium hover:bg-white/10"
+          >{{ l.label }}</a
+        >
+      }
+    </nav>
+    <button
+      type="button"
+      class="rounded-md p-2 hover:bg-white/10 md:hidden"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="mobile-nav"
+      (click)="menuOpen.set(!menuOpen())"
+    >
+      <app-icon [name]="menuOpen() ? 'close' : 'menu'" [size]="24" />
+      <span class="sr-only">{{ menuOpen() ? 'Close menu' : 'Open menu' }}</span>
+    </button>
+  </div>
+  @if (menuOpen()) {
+    <nav id="mobile-nav" aria-label="Main" class="border-t border-navy-800 px-4 pb-3 md:hidden">
+      <ul>
+        @for (l of links; track l.path) {
+          <li>
+            <a
+              [routerLink]="l.path"
+              routerLinkActive="bg-white/15"
+              ariaCurrentWhenActive="page"
+              [routerLinkActiveOptions]="{ exact: l.exact }"
+              class="block rounded-md px-3 py-3 font-medium hover:bg-white/10"
+              >{{ l.label }}</a
+            >
+          </li>
+        }
+      </ul>
+    </nav>
+  }
+</header>
+
+<main id="main-content" tabindex="-1" class="min-h-[70vh] outline-none">
+  <router-outlet />
+</main>
+
+<footer class="mt-16 bg-navy-950 text-slate-300">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3">
+    <div>
+      <p class="text-lg font-bold text-white">TechFix</p>
+      <p class="mt-2 text-sm">
+        Free, step-by-step help for everyday computer, phone and internet problems. No account, no
+        tracking, no server.
+      </p>
+    </div>
+    <nav aria-label="Footer">
+      <p class="font-semibold text-white">Explore</p>
+      <ul class="mt-2 space-y-1 text-sm">
+        <li>
+          <a routerLink="/guides" class="underline-offset-2 hover:underline">Browse problems</a>
+        </li>
+        <li>
+          <a routerLink="/categories" class="underline-offset-2 hover:underline">Categories</a>
+        </li>
+        <li>
+          <a routerLink="/diagnose" class="underline-offset-2 hover:underline">Guided diagnosis</a>
+        </li>
+        <li>
+          <a routerLink="/about" class="underline-offset-2 hover:underline">About and privacy</a>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <p class="font-semibold text-white">Safety information</p>
+      <p class="mt-2 text-sm">
+        Instructions are informational. Back up important files before changing settings, and never
+        open batteries or power supplies. For hardware repairs or advanced changes, contact a
+        qualified technician.
+      </p>
+    </div>
+  </div>
+  <p class="border-t border-navy-800 py-4 text-center text-xs">
+    © {{ year }} TechFix. Bookmarks and history are stored only in this browser.
+  </p>
+</footer>

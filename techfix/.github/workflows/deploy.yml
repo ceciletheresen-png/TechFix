@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main] # the production branch; change here if you use a different one
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+
+      # The base path comes from the repository name, so nothing is hardcoded in the source.
+      # For a user/organisation site (<name>.github.io) or a custom domain, use --base-href "/" instead.
+      - name: Build
+        run: npm run build -- --base-href "/${{ github.event.repository.name }}/"
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist/techfix/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

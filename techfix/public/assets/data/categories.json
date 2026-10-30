@@ -1,0 +1,12 @@
+[
+  {"id":"windows-pcs","slug":"windows-pcs","name":"Windows PCs","description":"Slow performance, updates, restarts and other problems on Windows desktops and laptops.","icon":"monitor","platform":"windows"},
+  {"id":"laptops","slug":"laptops","name":"Laptops","description":"Power, heat and other problems that are specific to laptop hardware.","icon":"laptop"},
+  {"id":"android","slug":"android-phones","name":"Android smartphones","description":"Fix slow, crashing or misbehaving Android phones and tablets.","icon":"smartphone","platform":"android"},
+  {"id":"ios","slug":"iphone-ios","name":"iPhones and iOS devices","description":"Storage, battery and app problems on iPhone and iPad.","icon":"tablet","platform":"ios"},
+  {"id":"wifi-internet","slug":"wifi-internet","name":"Wi-Fi and internet connectivity","description":"No internet, slow Wi-Fi, DNS errors and routers that will not cooperate.","icon":"wifi"},
+  {"id":"bluetooth-peripherals","slug":"bluetooth-peripherals","name":"Bluetooth and peripherals","description":"Headphones, keyboards, mice and USB devices that will not connect or keep dropping.","icon":"bluetooth"},
+  {"id":"storage-performance","slug":"storage-performance","name":"Storage and performance","description":"Full disks, low free space and devices that feel sluggish.","icon":"drive"},
+  {"id":"software-apps","slug":"software-apps","name":"Software and application problems","description":"Apps that freeze, crash or refuse to open on computers and phones.","icon":"app"},
+  {"id":"audio-display-hardware","slug":"audio-display-hardware","name":"Audio, display and hardware symptoms","description":"No sound, flickering screens and other symptoms you can see or hear.","icon":"volume"},
+  {"id":"charging-battery","slug":"charging-battery","name":"Charging and battery problems","description":"Devices that will not charge, drain quickly or run hot.","icon":"battery"}
+]

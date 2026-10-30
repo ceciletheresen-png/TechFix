@@ -1,0 +1,1865 @@
+[
+ {
+  "id": "g-windows-running-slowly",
+  "slug": "windows-running-slowly",
+  "title": "Windows computer running slowly",
+  "description": "Speed up a Windows 10 or 11 PC that has become sluggish, using safe and reversible steps first.",
+  "categoryId": "windows-pcs",
+  "platforms": [
+   "windows"
+  ],
+  "symptoms": [
+   "Apps take a long time to open",
+   "Fan is loud even when idle",
+   "Mouse pointer lags"
+  ],
+  "causes": [
+   "Too many programs starting with Windows",
+   "Low free disk space",
+   "Pending updates or background scans",
+   "Not enough memory (RAM) for current use"
+  ],
+  "difficulty": "beginner",
+  "minutes": 25,
+  "prerequisites": [
+   "You are signed in with a Windows account that can change settings"
+  ],
+  "steps": [
+   {
+    "title": "Restart the computer",
+    "instruction": "Choose Start > Power > Restart. Do not use Shut down: with Fast Startup enabled it may not fully clear memory.",
+    "expected": "The PC reboots and feels responsive for the first few minutes."
+   },
+   {
+    "title": "Find what is using resources",
+    "instruction": "Press Ctrl+Shift+Esc to open Task Manager. Click the Processes tab, then click the CPU, Memory and Disk column headers to sort. Note any app using a very high share.",
+    "expected": "You can see which app is the heaviest. Normal idle CPU is usually under 10%."
+   },
+   {
+    "title": "Close or limit heavy apps",
+    "instruction": "Select the heavy app and choose End task only if it is an app you opened yourself and saved. Do not end items you do not recognise, because some are needed by Windows.",
+    "expected": "CPU, memory or disk use drops after the app closes."
+   },
+   {
+    "title": "Reduce startup programs",
+    "instruction": "In Task Manager open Startup apps (Windows 11) or Startup (Windows 10). Right-click apps you do not need at sign-in and choose Disable. This does not uninstall them.",
+    "expected": "Next restart, Windows reaches a usable desktop faster."
+   },
+   {
+    "title": "Check free space and updates",
+    "instruction": "Open Settings > System > Storage and confirm at least 15% of the drive is free. Then open Settings > Windows Update and install pending updates.",
+    "expected": "Storage shows healthy free space and Windows Update says you are up to date."
+   }
+  ],
+  "warnings": [
+   "Do not download 'PC speed-up' or registry cleaner tools; they are a common source of malware and rarely help."
+  ],
+  "recovery": [
+   "Any startup app you disabled can be re-enabled from the same Startup list."
+  ],
+  "alternatives": [
+   "If the PC has 4 GB of RAM or less, adding memory (done by a technician if needed) often gives the biggest improvement."
+  ],
+  "relatedIds": [
+   "g-computer-out-of-storage",
+   "g-windows-update-failing",
+   "g-laptop-overheating"
+  ],
+  "lastReviewed": "2026-09-20",
+  "keywords": [
+   "slow",
+   "lag",
+   "sluggish",
+   "freezing",
+   "performance",
+   "startup",
+   "task manager"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-laptop-wont-turn-on",
+  "slug": "laptop-wont-turn-on",
+  "title": "Laptop will not turn on",
+  "description": "Work out whether a dead laptop has a power, battery or display problem before seeking repair.",
+  "categoryId": "laptops",
+  "platforms": [
+   "any"
+  ],
+  "symptoms": [
+   "No lights or fan noise when pressing power",
+   "Lights come on but the screen stays black",
+   "Laptop turns on only when plugged in"
+  ],
+  "causes": [
+   "Faulty charger or wall socket",
+   "Fully drained or failing battery",
+   "Frozen firmware state",
+   "Display or hardware failure"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "tools": [
+   "Original charger",
+   "A known-working wall socket"
+  ],
+  "steps": [
+   {
+    "title": "Check the power source",
+    "instruction": "Plug the charger directly into a wall socket you know works (not a loose extension). Look for a charging light on the laptop or charger and check the cable for kinks or damage.",
+    "expected": "A charging light appears, or the laptop shows a battery icon."
+   },
+   {
+    "title": "Disconnect everything else",
+    "instruction": "Unplug USB drives, docks, printers and external displays. A faulty accessory can stop startup.",
+    "expected": "The laptop has only the charger attached."
+   },
+   {
+    "title": "Let it charge, then try the power button",
+    "instruction": "Leave it plugged in for 30 minutes, then hold the power button for 2 seconds.",
+    "expected": "Lights, fan noise or the manufacturer logo appear."
+   },
+   {
+    "title": "Do a power reset",
+    "instruction": "Unplug the charger, then hold the power button for 15 to 30 seconds and release. Plug the charger back in and press power once. Do not open the laptop or remove internal parts.",
+    "expected": "The laptop starts, or a charging light appears where there was none."
+   },
+   {
+    "title": "Check whether only the screen is dark",
+    "instruction": "If fans or lights run but the screen is black, shine a torch at the screen at an angle to look for a faint image, or connect an external monitor and press the display switch key (often Fn plus a screen icon, or Windows+P).",
+    "expected": "A picture on the external monitor means the laptop works and the internal display or its settings are the problem."
+   }
+  ],
+  "warnings": [
+   "Never open a laptop or puncture, bend or pry a swollen battery. A swollen battery is a fire risk: stop using it and contact a qualified technician."
+  ],
+  "alternatives": [
+   "If the laptop stays dead after a different charger and a power reset, a technician should test the battery and motherboard."
+  ],
+  "relatedIds": [
+   "g-laptop-battery-not-charging",
+   "g-laptop-overheating"
+  ],
+  "lastReviewed": "2026-09-18",
+  "keywords": [
+   "dead",
+   "no power",
+   "won't start",
+   "black screen",
+   "won't boot",
+   "power button"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-laptop-battery-not-charging",
+  "slug": "laptop-battery-not-charging",
+  "title": "Laptop battery not charging",
+  "description": "Find out why a laptop shows 'plugged in, not charging' or does not charge at all.",
+  "categoryId": "charging-battery",
+  "platforms": [
+   "windows",
+   "any"
+  ],
+  "symptoms": [
+   "'Plugged in, not charging' message",
+   "Battery percentage never rises",
+   "Charger light is off"
+  ],
+  "causes": [
+   "Wrong or damaged charger",
+   "Dirty or damaged charging port",
+   "Battery protection mode",
+   "Worn-out battery"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "tools": [
+   "Original or manufacturer-approved charger"
+  ],
+  "steps": [
+   {
+    "title": "Check the charger and port",
+    "instruction": "Confirm the charger wattage matches the label under the laptop. Look for bent pins, debris or loose fit at the port, and kinks in the cable. If you can, try a second compatible charger.",
+    "expected": "The charger fits firmly and its indicator light is on."
+   },
+   {
+    "title": "Remove heat and accessories",
+    "instruction": "Unplug USB devices and let a hot laptop cool for 10 minutes. Many laptops pause charging when hot.",
+    "expected": "Charging resumes once the laptop is cool."
+   },
+   {
+    "title": "Restart and check battery settings",
+    "instruction": "Restart with the charger connected. Check the maker's app (for example Lenovo Vantage, MyASUS or HP Support Assistant) for a battery-protection or charge-limit setting, which may hold charge at 60 to 80 percent on purpose.",
+    "expected": "Either the battery charges, or you learn that a limit is set deliberately."
+   },
+   {
+    "title": "Update system firmware from the maker",
+    "instruction": "Use Windows Update or the manufacturer's own support app to install BIOS and battery-firmware updates. Do not download them from third-party sites.",
+    "expected": "Updates install and the charging state is re-checked."
+   },
+   {
+    "title": "Judge the battery's health",
+    "instruction": "If the laptop only runs on the charger, or shuts down instantly when unplugged, the battery is likely worn out. A technician can test and replace it.",
+    "expected": "You know whether to replace the battery or the charger."
+   }
+  ],
+  "warnings": [
+   "Do not use unbranded chargers and never open the battery compartment of a sealed laptop."
+  ],
+  "relatedIds": [
+   "g-laptop-wont-turn-on",
+   "g-phone-battery-draining-fast",
+   "g-laptop-overheating"
+  ],
+  "lastReviewed": "2026-09-22",
+  "keywords": [
+   "not charging",
+   "plugged in",
+   "charger",
+   "battery"
+  ]
+ },
+ {
+  "id": "g-wifi-connected-no-internet",
+  "slug": "wifi-connected-no-internet",
+  "title": "Computer connected to Wi-Fi but no internet",
+  "description": "Fix the 'connected, no internet' state on a Windows or Mac computer.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "windows",
+   "macos"
+  ],
+  "symptoms": [
+   "Wi-Fi icon shows a warning",
+   "Websites will not load but the network name shows connected",
+   "Other apps cannot reach the internet"
+  ],
+  "causes": [
+   "Router or modem lost its internet link",
+   "IP address problem",
+   "DNS problem",
+   "Provider outage"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "steps": [
+   {
+    "title": "Test another device",
+    "instruction": "Try a phone on the same Wi-Fi. If it also has no internet, the problem is the router or the provider; go to the router guide.",
+    "expected": "You know if the problem is this computer or the network."
+   },
+   {
+    "title": "Toggle Wi-Fi and restart",
+    "instruction": "Turn Wi-Fi off and on, then restart the computer.",
+    "expected": "The connection re-establishes."
+   },
+   {
+    "title": "Forget and rejoin the network",
+    "instruction": "Windows: Settings > Network & internet > Wi-Fi > Manage known networks > Forget. Mac: System Settings > Wi-Fi > Details > Forget This Network. Reconnect with the password.",
+    "expected": "The computer gets a fresh address and connects. Have the Wi-Fi password ready first."
+   },
+   {
+    "title": "Renew the network configuration (Windows)",
+    "instruction": "Open Command Prompt and run: ipconfig /release then ipconfig /renew then ipconfig /flushdns. These only refresh your address and clear the DNS cache; they do not delete files.",
+    "expected": "A new IP address is shown and websites load."
+   },
+   {
+    "title": "Try a different DNS server",
+    "instruction": "See the DNS guide to switch to a public resolver temporarily.",
+    "expected": "Sites load by name if DNS was the cause."
+   }
+  ],
+  "recovery": [
+   "To undo a DNS change, set DNS back to 'Automatic'."
+  ],
+  "relatedIds": [
+   "g-router-no-internet",
+   "g-dns-resolution-errors",
+   "g-slow-wifi"
+  ],
+  "lastReviewed": "2026-09-25",
+  "keywords": [
+   "no internet",
+   "connected",
+   "limited",
+   "wifi",
+   "yellow triangle"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-windows-no-sound",
+  "slug": "windows-no-sound",
+  "title": "Windows computer has no sound",
+  "description": "Restore audio on a Windows PC by checking output, volume, and drivers in a safe order.",
+  "categoryId": "audio-display-hardware",
+  "platforms": [
+   "windows"
+  ],
+  "symptoms": [
+   "No sound from speakers or headphones",
+   "Red X on the volume icon",
+   "Sound works in one app only"
+  ],
+  "causes": [
+   "Wrong output device selected",
+   "Muted or very low volume",
+   "Faulty driver after an update",
+   "Loose cable"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Check volume and mute",
+    "instruction": "Click the speaker icon in the taskbar and confirm the master volume is up and not muted. Check the app's own volume too.",
+    "expected": "The volume slider is above zero and not muted."
+   },
+   {
+    "title": "Select the right output",
+    "instruction": "Click the arrow beside the volume slider (or Settings > System > Sound > Output) and choose your speakers or headphones.",
+    "expected": "Sound plays from the chosen device."
+   },
+   {
+    "title": "Check connections",
+    "instruction": "Re-seat headphone or speaker cables and try a different port. For Bluetooth audio, confirm the device is connected.",
+    "expected": "A test sound is heard."
+   },
+   {
+    "title": "Run the audio troubleshooter",
+    "instruction": "Settings > System > Troubleshoot > Other troubleshooters > Audio > Run.",
+    "expected": "Windows fixes or reports the issue."
+   },
+   {
+    "title": "Reinstall the audio driver",
+    "instruction": "Open Device Manager, expand Sound, video and game controllers, right-click your audio device, choose Uninstall device, then restart. Windows reinstalls the driver on boot.",
+    "expected": "Sound returns after the restart."
+   }
+  ],
+  "warnings": [
+   "Only download drivers from your PC maker or through Windows Update."
+  ],
+  "recovery": [
+   "If sound worsens after a driver update, use Device Manager > Properties > Driver > Roll Back Driver."
+  ],
+  "relatedIds": [
+   "g-bluetooth-not-detecting-devices",
+   "g-usb-device-not-recognized"
+  ],
+  "lastReviewed": "2026-09-12",
+  "keywords": [
+   "no sound",
+   "audio",
+   "speaker",
+   "mute",
+   "headphones",
+   "volume"
+  ]
+ },
+ {
+  "id": "g-computer-out-of-storage",
+  "slug": "computer-out-of-storage",
+  "title": "Computer running out of storage",
+  "description": "Free up disk space on a Windows PC without deleting anything you need.",
+  "categoryId": "storage-performance",
+  "platforms": [
+   "windows"
+  ],
+  "symptoms": [
+   "'Low disk space' warnings",
+   "Updates fail",
+   "Computer slows down"
+  ],
+  "causes": [
+   "Large downloads and videos",
+   "Temporary files",
+   "Old app installs",
+   "Recycle Bin contents"
+  ],
+  "difficulty": "beginner",
+  "minutes": 30,
+  "prerequisites": [
+   "Know where your important files are"
+  ],
+  "steps": [
+   {
+    "title": "See what is using space",
+    "instruction": "Open Settings > System > Storage and review the categories.",
+    "expected": "You know which categories are largest."
+   },
+   {
+    "title": "Turn on Storage Sense",
+    "instruction": "In Storage, enable Storage Sense and choose Run now. It removes temporary files and empties the Recycle Bin by schedule.",
+    "expected": "Several GB may be recovered."
+   },
+   {
+    "title": "Remove unused apps",
+    "instruction": "Settings > Apps > Installed apps, sort by size, and uninstall apps you are certain you no longer use.",
+    "expected": "Disk use drops; apps can be reinstalled later."
+   },
+   {
+    "title": "Move or back up large files",
+    "instruction": "Copy videos, photos and downloads to an external drive or a cloud service you trust, check they opened correctly, then delete the local copies.",
+    "expected": "Free space increases."
+   },
+   {
+    "title": "Empty the Recycle Bin",
+    "instruction": "Right-click the Recycle Bin and choose Empty only after checking nothing needed is inside.",
+    "expected": "Space from deleted files is released."
+   }
+  ],
+  "warnings": [
+   "Never delete files from the Windows or Program Files folders to save space."
+  ],
+  "alternatives": [
+   "Consider a larger or additional drive if space is always short."
+  ],
+  "relatedIds": [
+   "g-windows-running-slowly",
+   "g-windows-update-failing",
+   "g-iphone-storage-almost-full"
+  ],
+  "lastReviewed": "2026-09-10",
+  "keywords": [
+   "disk full",
+   "low space",
+   "storage",
+   "c drive",
+   "free space",
+   "cleanup"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-bluetooth-not-detecting-devices",
+  "slug": "bluetooth-not-detecting-devices",
+  "title": "Bluetooth not detecting devices",
+  "description": "Make a computer or phone find nearby Bluetooth headphones, speakers, keyboards and mice.",
+  "categoryId": "bluetooth-peripherals",
+  "platforms": [
+   "windows",
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "Device list stays empty",
+   "Bluetooth toggle is missing or greyed out",
+   "Device appears but will not pair"
+  ],
+  "causes": [
+   "Device not in pairing mode",
+   "Bluetooth turned off or airplane mode on",
+   "Driver or software glitch",
+   "Distance or interference"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Put the accessory in pairing mode",
+    "instruction": "Hold the accessory's pairing or Bluetooth button until its light flashes. Check its manual because the method differs by model.",
+    "expected": "The accessory light flashes rapidly."
+   },
+   {
+    "title": "Confirm Bluetooth is on",
+    "instruction": "Turn off Airplane mode and switch Bluetooth on in Settings (Windows: Settings > Bluetooth & devices).",
+    "expected": "Bluetooth toggle is on and scanning."
+   },
+   {
+    "title": "Move closer and remove interference",
+    "instruction": "Keep the devices within 1 metre, away from USB 3 hubs and microwave ovens.",
+    "expected": "The accessory appears in the list."
+   },
+   {
+    "title": "Remove old pairings and retry",
+    "instruction": "Delete the accessory from the saved devices list, then add it again as a new device.",
+    "expected": "The accessory pairs."
+   },
+   {
+    "title": "Restart Bluetooth service or the device",
+    "instruction": "Restart your computer or phone. On Windows, check Device Manager for a Bluetooth section; if absent, see the manufacturer's site for chipset support.",
+    "expected": "The Bluetooth adapter is listed and works."
+   }
+  ],
+  "relatedIds": [
+   "g-bluetooth-headphones-not-connecting",
+   "g-bluetooth-keeps-disconnecting",
+   "g-usb-device-not-recognized"
+  ],
+  "lastReviewed": "2026-09-14",
+  "keywords": [
+   "bluetooth",
+   "pairing",
+   "not found",
+   "headphones",
+   "mouse",
+   "keyboard"
+  ]
+ },
+ {
+  "id": "g-application-freezing-crashing",
+  "slug": "application-freezing-crashing",
+  "title": "Application freezing or crashing",
+  "description": "Stabilise a desktop program that hangs, closes itself or will not open.",
+  "categoryId": "software-apps",
+  "platforms": [
+   "windows",
+   "macos"
+  ],
+  "symptoms": [
+   "'Not responding' title bar",
+   "App closes without warning",
+   "App stops opening"
+  ],
+  "causes": [
+   "Out-of-date app or OS",
+   "Corrupt settings or cache",
+   "Low memory",
+   "Conflicting software"
+  ],
+  "difficulty": "beginner",
+  "minutes": 25,
+  "steps": [
+   {
+    "title": "Close and reopen the app",
+    "instruction": "Wait one minute for it to respond, then close it (Windows: Task Manager > End task; Mac: Force Quit from the Apple menu). Reopen it.",
+    "expected": "The app opens normally. Unsaved work in the frozen window may be lost."
+   },
+   {
+    "title": "Restart your computer",
+    "instruction": "A restart clears memory and stuck background processes.",
+    "expected": "App behaves normally after restart."
+   },
+   {
+    "title": "Update the app and your system",
+    "instruction": "Install updates for the app from its own update option or the official store, then install system updates.",
+    "expected": "Latest versions installed."
+   },
+   {
+    "title": "Check free memory and disk space",
+    "instruction": "Keep at least 10 to 15% of the disk free and close other heavy programs.",
+    "expected": "Fewer crashes with fewer programs running."
+   },
+   {
+    "title": "Repair or reinstall",
+    "instruction": "Windows: Settings > Apps > Installed apps > your app > Advanced options > Repair. If that fails, uninstall and reinstall from the official source after backing up any app data.",
+    "expected": "A clean install works."
+   }
+  ],
+  "warnings": [
+   "Back up documents the app created before uninstalling it."
+  ],
+  "relatedIds": [
+   "g-windows-running-slowly",
+   "g-phone-apps-crashing",
+   "g-computer-restarting-unexpectedly"
+  ],
+  "lastReviewed": "2026-09-16",
+  "keywords": [
+   "crash",
+   "freeze",
+   "not responding",
+   "hang",
+   "won't open",
+   "app"
+  ]
+ },
+ {
+  "id": "g-usb-device-not-recognized",
+  "slug": "usb-device-not-recognized",
+  "title": "USB device not recognized",
+  "description": "Get Windows to detect a USB drive, printer, keyboard or other device.",
+  "categoryId": "bluetooth-peripherals",
+  "platforms": [
+   "windows"
+  ],
+  "symptoms": [
+   "'USB device not recognized' message",
+   "Drive does not appear in File Explorer",
+   "Device keeps connecting and disconnecting"
+  ],
+  "causes": [
+   "Faulty cable or port",
+   "Power-saving settings",
+   "Driver issue",
+   "Failing device"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Try another port and cable",
+    "instruction": "Unplug the device and connect it to a different port directly on the computer, not through a hub.",
+    "expected": "Windows plays the connected sound."
+   },
+   {
+    "title": "Test it on another computer",
+    "instruction": "If it fails there too, the device or cable is faulty.",
+    "expected": "You know whether the device or this PC is at fault."
+   },
+   {
+    "title": "Restart the computer",
+    "instruction": "Disconnect the device, restart, then reconnect.",
+    "expected": "Device is detected."
+   },
+   {
+    "title": "Check Device Manager",
+    "instruction": "Open Device Manager and look for items with a yellow warning icon. Right-click > Uninstall device, unplug the USB device, restart and reconnect.",
+    "expected": "Windows reinstalls the driver."
+   },
+   {
+    "title": "Disable USB power saving",
+    "instruction": "Settings > System > Power & battery > Power mode, and in Device Manager open each USB Root Hub > Power Management and untick 'Allow the computer to turn off this device to save power'.",
+    "expected": "Device stays connected."
+   }
+  ],
+  "warnings": [
+   "If a drive holds important files, do not click Format when Windows offers it. Contact a data-recovery professional."
+  ],
+  "relatedIds": [
+   "g-bluetooth-not-detecting-devices",
+   "g-phone-computer-file-transfer"
+  ],
+  "lastReviewed": "2026-09-11",
+  "keywords": [
+   "usb",
+   "not recognized",
+   "flash drive",
+   "port",
+   "external drive"
+  ]
+ },
+ {
+  "id": "g-windows-update-failing",
+  "slug": "windows-update-failing",
+  "title": "Windows update failing",
+  "description": "Resolve Windows Update errors using the built-in troubleshooter and safe repair tools.",
+  "categoryId": "windows-pcs",
+  "platforms": [
+   "windows"
+  ],
+  "symptoms": [
+   "Update stuck at a percentage",
+   "Error codes such as 0x80070002",
+   "Update keeps reverting after restart"
+  ],
+  "causes": [
+   "Not enough disk space",
+   "Corrupted update cache",
+   "Damaged system files",
+   "Interrupted connection"
+  ],
+  "difficulty": "intermediate",
+  "minutes": 45,
+  "prerequisites": [
+   "At least 20 GB free space",
+   "Laptop plugged in"
+  ],
+  "steps": [
+   {
+    "title": "Free space and stay connected",
+    "instruction": "Make sure at least 20 GB is free and the PC is plugged in. Pause other downloads.",
+    "expected": "Update has the room and power it needs."
+   },
+   {
+    "title": "Restart and retry",
+    "instruction": "Restart, then Settings > Windows Update > Check for updates.",
+    "expected": "Update resumes."
+   },
+   {
+    "title": "Run the Windows Update troubleshooter",
+    "instruction": "Settings > System > Troubleshoot > Other troubleshooters > Windows Update > Run.",
+    "expected": "Troubleshooter reports fixes or no problem."
+   },
+   {
+    "title": "Check system files",
+    "instruction": "Open Command Prompt as administrator and run: sfc /scannow. It scans protected Windows files and repairs damaged ones from a local cache. If it reports unfixable files, run: DISM /Online /Cleanup-Image /RestoreHealth, then sfc /scannow again.",
+    "expected": "Scan reports no integrity violations or that it repaired files."
+   },
+   {
+    "title": "Restart and install again",
+    "instruction": "Restart and run Windows Update once more.",
+    "expected": "Update installs."
+   }
+  ],
+  "warnings": [
+   "Do not switch the PC off while an update says 'Do not turn off your computer'.",
+   "Back up important files before major updates."
+  ],
+  "alternatives": [
+   "Use the official Windows Update Assistant from microsoft.com if a feature update repeatedly fails."
+  ],
+  "relatedIds": [
+   "g-computer-out-of-storage",
+   "g-windows-running-slowly",
+   "g-computer-restarting-unexpectedly"
+  ],
+  "lastReviewed": "2026-09-28",
+  "keywords": [
+   "update",
+   "stuck",
+   "error",
+   "windows update",
+   "0x80070002"
+  ]
+ },
+ {
+  "id": "g-laptop-overheating",
+  "slug": "laptop-overheating",
+  "title": "Laptop overheating",
+  "description": "Cool down a hot, noisy laptop and reduce shutdowns caused by heat.",
+  "categoryId": "laptops",
+  "platforms": [
+   "any"
+  ],
+  "symptoms": [
+   "Hot underside or keyboard",
+   "Fan loud all the time",
+   "Sudden shutdowns or slowdowns"
+  ],
+  "causes": [
+   "Blocked vents",
+   "Dust inside",
+   "Heavy background tasks",
+   "Use on soft surfaces"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "tools": [
+   "Hard flat surface",
+   "Optional: laptop stand"
+  ],
+  "steps": [
+   {
+    "title": "Move to a hard, flat surface",
+    "instruction": "Never use it on a bed or sofa. Raise the back slightly with a stand to improve airflow.",
+    "expected": "Temperature gradually falls."
+   },
+   {
+    "title": "Check the vents",
+    "instruction": "Look at the side and bottom vents for lint. With the laptop off and unplugged, blow short bursts of air across the vents, or gently use a soft brush.",
+    "expected": "Airflow improves."
+   },
+   {
+    "title": "Close heavy programs",
+    "instruction": "Open Task Manager (Windows) or Activity Monitor (Mac) and close apps using a lot of CPU.",
+    "expected": "Fan noise drops."
+   },
+   {
+    "title": "Update software and firmware",
+    "instruction": "Install OS and maker updates; they can include fan-control fixes.",
+    "expected": "Updates are installed."
+   },
+   {
+    "title": "Know when to seek help",
+    "instruction": "If it still overheats or shuts down, a technician can clean internal dust and replace thermal paste.",
+    "expected": "You have a repair plan."
+   }
+  ],
+  "warnings": [
+   "Do not open the laptop or spray liquids or compressed-air cans held upside down into it."
+  ],
+  "relatedIds": [
+   "g-windows-running-slowly",
+   "g-laptop-wont-turn-on",
+   "g-phone-overheating"
+  ],
+  "lastReviewed": "2026-09-08",
+  "keywords": [
+   "hot",
+   "overheat",
+   "fan",
+   "thermal",
+   "shutdown",
+   "heat"
+  ]
+ },
+ {
+  "id": "g-computer-restarting-unexpectedly",
+  "slug": "computer-restarting-unexpectedly",
+  "title": "Computer restarting unexpectedly",
+  "description": "Investigate a Windows PC that reboots or shows a blue screen without warning.",
+  "categoryId": "windows-pcs",
+  "platforms": [
+   "windows"
+  ],
+  "symptoms": [
+   "Random restarts",
+   "Blue screen with a stop code",
+   "Restart happens during gaming or heavy use"
+  ],
+  "causes": [
+   "Overheating",
+   "Faulty update or driver",
+   "Failing memory or storage",
+   "Power supply problem"
+  ],
+  "difficulty": "intermediate",
+  "minutes": 40,
+  "steps": [
+   {
+    "title": "Note when it happens",
+    "instruction": "Write down what you were doing and any blue-screen stop code (for example CRITICAL_PROCESS_DIED).",
+    "expected": "A pattern or code to search for."
+   },
+   {
+    "title": "Check heat",
+    "instruction": "Feel the vents and listen to fans. Follow the overheating guide if the machine is hot.",
+    "expected": "Normal temperature at idle."
+   },
+   {
+    "title": "Install updates",
+    "instruction": "Run Windows Update and install optional driver updates the maker lists. Remove recently installed software that began the problem.",
+    "expected": "Latest drivers present."
+   },
+   {
+    "title": "Run Windows Memory Diagnostic",
+    "instruction": "Search for Windows Memory Diagnostic, choose Restart now, and let the test finish. Save your work first.",
+    "expected": "The result says no problems, or it names a memory fault."
+   },
+   {
+    "title": "Check the system files",
+    "instruction": "Run sfc /scannow in an administrator Command Prompt (it only repairs Windows files).",
+    "expected": "No integrity violations."
+   }
+  ],
+  "warnings": [
+   "A PC that restarts constantly may be about to lose its storage. Back up important files now."
+  ],
+  "alternatives": [
+   "Failing power supplies or memory modules need a qualified technician."
+  ],
+  "relatedIds": [
+   "g-laptop-overheating",
+   "g-windows-update-failing",
+   "g-application-freezing-crashing"
+  ],
+  "lastReviewed": "2026-09-19",
+  "keywords": [
+   "restart",
+   "reboot",
+   "blue screen",
+   "bsod",
+   "random shutdown"
+  ]
+ },
+ {
+  "id": "g-android-running-slowly",
+  "slug": "android-running-slowly",
+  "title": "Android phone running slowly",
+  "description": "Make a laggy Android phone faster with updates, storage cleanup and app management.",
+  "categoryId": "android",
+  "platforms": [
+   "android"
+  ],
+  "symptoms": [
+   "Apps open slowly",
+   "Touch input lags",
+   "Phone gets warm during simple tasks"
+  ],
+  "causes": [
+   "Nearly full storage",
+   "Outdated Android or apps",
+   "Too many background apps",
+   "A misbehaving app"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "steps": [
+   {
+    "title": "Restart the phone",
+    "instruction": "Hold the power button and choose Restart.",
+    "expected": "Phone feels quicker immediately after restart."
+   },
+   {
+    "title": "Free storage space",
+    "instruction": "Settings > Storage. Remove unused apps, large videos and downloads, or move photos to a cloud account you trust first.",
+    "expected": "At least 10% of storage is free."
+   },
+   {
+    "title": "Update Android and apps",
+    "instruction": "Settings > System > System update (path varies by maker), then open Google Play > Profile > Manage apps & device > Update all.",
+    "expected": "Everything is up to date."
+   },
+   {
+    "title": "Check for a problem app",
+    "instruction": "Settings > Battery or Apps shows which apps use the most battery or memory. Update, restrict background use for, or uninstall the heaviest unnecessary app.",
+    "expected": "The phone speeds up after removing the culprit."
+   },
+   {
+    "title": "Test in Safe Mode",
+    "instruction": "Hold the power button, then touch and hold Power off and choose OK for Safe Mode. If the phone is fast there, a downloaded app is the cause. Restart normally to leave Safe Mode.",
+    "expected": "You can tell whether third-party apps are responsible."
+   }
+  ],
+  "warnings": [
+   "Avoid 'cleaner' or 'booster' apps; many show ads or collect data."
+  ],
+  "alternatives": [
+   "If still slow after these steps, a factory reset can help, but only after a full backup. See the warning in the reset instructions of your maker."
+  ],
+  "relatedIds": [
+   "g-phone-apps-crashing",
+   "g-phone-battery-draining-fast",
+   "g-phone-overheating"
+  ],
+  "lastReviewed": "2026-09-21",
+  "keywords": [
+   "android",
+   "slow",
+   "lag",
+   "samsung",
+   "pixel",
+   "performance"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-iphone-storage-almost-full",
+  "slug": "iphone-storage-almost-full",
+  "title": "iPhone storage almost full",
+  "description": "Free space on an iPhone without losing photos or data you care about.",
+  "categoryId": "ios",
+  "platforms": [
+   "ios"
+  ],
+  "symptoms": [
+   "'iPhone Storage Almost Full' alert",
+   "Cannot take photos or update iOS",
+   "Apps will not install"
+  ],
+  "causes": [
+   "Photos and videos",
+   "Messages attachments",
+   "Unused apps",
+   "Cached app data"
+  ],
+  "difficulty": "beginner",
+  "minutes": 25,
+  "prerequisites": [
+   "Wi-Fi if you plan to back up to iCloud"
+  ],
+  "steps": [
+   {
+    "title": "Review storage",
+    "instruction": "Settings > General > iPhone Storage and read the recommendations.",
+    "expected": "You see which items use the most space."
+   },
+   {
+    "title": "Back up photos before deleting",
+    "instruction": "Turn on iCloud Photos or copy photos to a computer. Confirm they appear there before you delete anything.",
+    "expected": "Photos exist in a second place."
+   },
+   {
+    "title": "Offload unused apps",
+    "instruction": "In iPhone Storage tap an app, then Offload App. This removes the app but keeps its documents and data so reinstalling restores them.",
+    "expected": "Space is freed and the app icon stays."
+   },
+   {
+    "title": "Clear Messages and downloads",
+    "instruction": "Settings > General > iPhone Storage > Messages > Review Large Attachments. Delete items you do not need. In Safari, Settings > Safari > Clear History and Website Data if needed.",
+    "expected": "Storage drops."
+   },
+   {
+    "title": "Empty Recently Deleted",
+    "instruction": "In Photos > Albums > Recently Deleted, choose Select > Delete All. These are removed permanently.",
+    "expected": "Deleted photos stop using space."
+   }
+  ],
+  "warnings": [
+   "Deleting items from Recently Deleted cannot be undone."
+  ],
+  "recovery": [
+   "Offloaded apps can be reinstalled from the App Store with their data intact."
+  ],
+  "relatedIds": [
+   "g-phone-battery-draining-fast",
+   "g-computer-out-of-storage"
+  ],
+  "lastReviewed": "2026-09-30",
+  "keywords": [
+   "iphone",
+   "storage",
+   "full",
+   "icloud",
+   "photos",
+   "ios"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-phone-battery-draining-fast",
+  "slug": "phone-battery-draining-fast",
+  "title": "Phone battery draining quickly",
+  "description": "Find what is draining an Android phone or iPhone battery and reduce the drain.",
+  "categoryId": "charging-battery",
+  "platforms": [
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "Battery falls by several percent per hour on standby",
+   "Phone warm when idle",
+   "Battery lasts under half a day"
+  ],
+  "causes": [
+   "Apps running in the background",
+   "Poor signal",
+   "High screen brightness",
+   "Aging battery"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "steps": [
+   {
+    "title": "See which apps use the most",
+    "instruction": "Android: Settings > Battery > Battery usage. iPhone: Settings > Battery. Look at the top apps in the last 24 hours.",
+    "expected": "You find unusually heavy apps."
+   },
+   {
+    "title": "Restrict background activity",
+    "instruction": "For heavy apps limit background use (Android: App info > Battery > Restricted; iPhone: Settings > General > Background App Refresh).",
+    "expected": "Drain reduces without deleting apps."
+   },
+   {
+    "title": "Adjust screen and connections",
+    "instruction": "Lower brightness, enable auto-brightness, shorten screen timeout, and turn off Bluetooth and location when not needed.",
+    "expected": "Screen-on time lasts longer."
+   },
+   {
+    "title": "Update the system and apps",
+    "instruction": "Install the latest OS and app updates; they often contain battery fixes.",
+    "expected": "Updates installed."
+   },
+   {
+    "title": "Check battery health",
+    "instruction": "iPhone: Settings > Battery > Battery Health & Charging. Android: Settings > Battery > Battery health (where offered) or Samsung Members. Below about 80% maximum capacity, replacement from the manufacturer or an authorised service provider may be worthwhile.",
+    "expected": "You know if the battery is worn."
+   }
+  ],
+  "warnings": [
+   "Do not replace a sealed phone battery yourself."
+  ],
+  "relatedIds": [
+   "g-phone-overheating",
+   "g-phone-not-charging",
+   "g-iphone-storage-almost-full"
+  ],
+  "lastReviewed": "2026-09-24",
+  "keywords": [
+   "battery",
+   "drain",
+   "dies fast",
+   "battery life",
+   "power saving"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-phone-overheating",
+  "slug": "phone-overheating",
+  "title": "Phone overheating",
+  "description": "Cool a hot Android phone or iPhone safely and reduce future heat.",
+  "categoryId": "android",
+  "platforms": [
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "Phone is hot to touch",
+   "Screen dims or a temperature warning appears",
+   "Charging stops"
+  ],
+  "causes": [
+   "Direct sunlight or hot car",
+   "Heavy games or video recording",
+   "Charging while in a thick case",
+   "Misbehaving app"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Stop heavy use and unplug",
+    "instruction": "Close apps, unplug the charger and remove the case.",
+    "expected": "The phone stops getting hotter."
+   },
+   {
+    "title": "Move to a cool, shaded place",
+    "instruction": "Place the phone on a table in shade. Do not put it in a fridge, freezer or ice; sudden cold causes condensation.",
+    "expected": "It cools gradually to normal warmth."
+   },
+   {
+    "title": "Turn on power saving",
+    "instruction": "Enable Battery Saver (Android) or Low Power Mode (iPhone) and lower brightness.",
+    "expected": "Less heat is produced."
+   },
+   {
+    "title": "Update and find the heavy app",
+    "instruction": "Update the OS and apps. Check Settings > Battery for apps that are using lots of power while idle.",
+    "expected": "A problem app is identified or fixed."
+   },
+   {
+    "title": "Check the charger and cable",
+    "instruction": "Use a quality charger from the phone maker or a certified brand and look for a bent or loose port.",
+    "expected": "The phone stays cool while charging."
+   }
+  ],
+  "warnings": [
+   "If the phone swells, smells, smokes or becomes too hot to hold, turn it off, keep it away from flammable materials and contact the manufacturer."
+  ],
+  "relatedIds": [
+   "g-phone-battery-draining-fast",
+   "g-phone-not-charging",
+   "g-laptop-overheating"
+  ],
+  "lastReviewed": "2026-09-09",
+  "keywords": [
+   "hot",
+   "overheat",
+   "warm",
+   "temperature",
+   "heat"
+  ]
+ },
+ {
+  "id": "g-phone-apps-crashing",
+  "slug": "phone-apps-crashing",
+  "title": "Phone applications crashing",
+  "description": "Stop apps on Android or iPhone from closing themselves or failing to open.",
+  "categoryId": "software-apps",
+  "platforms": [
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "App closes on launch",
+   "App freezes after opening",
+   "Error message about the app stopping"
+  ],
+  "causes": [
+   "Outdated app or OS",
+   "Full storage",
+   "Corrupt cache",
+   "App bug"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Close and reopen the app",
+    "instruction": "Swipe the app away from the app switcher and open it again.",
+    "expected": "The app launches."
+   },
+   {
+    "title": "Restart the phone",
+    "instruction": "Power off and on.",
+    "expected": "Memory is cleared."
+   },
+   {
+    "title": "Update the app and OS",
+    "instruction": "Update the app from Google Play or the App Store, and install the latest system update.",
+    "expected": "Both are up to date."
+   },
+   {
+    "title": "Clear the app cache (Android) or offload (iPhone)",
+    "instruction": "Android: Settings > Apps > the app > Storage > Clear cache. Do not choose Clear data unless you accept losing app data. iPhone: Settings > General > iPhone Storage > the app > Offload App then reinstall.",
+    "expected": "App starts reliably."
+   },
+   {
+    "title": "Reinstall the app",
+    "instruction": "Uninstall and install again from the official store. Make sure you know your login details first.",
+    "expected": "A clean install works."
+   }
+  ],
+  "warnings": [
+   "Clear data or deleting an app can remove local data that is not backed up."
+  ],
+  "relatedIds": [
+   "g-application-freezing-crashing",
+   "g-android-running-slowly",
+   "g-iphone-storage-almost-full"
+  ],
+  "lastReviewed": "2026-09-17",
+  "keywords": [
+   "app crash",
+   "keeps stopping",
+   "won't open",
+   "android",
+   "iphone"
+  ]
+ },
+ {
+  "id": "g-phone-cannot-connect-wifi",
+  "slug": "phone-cannot-connect-wifi",
+  "title": "Phone unable to connect to Wi-Fi",
+  "description": "Reconnect an Android phone or iPhone that cannot join or stay on a Wi-Fi network.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "'Failed to connect' or 'incorrect password'",
+   "Wi-Fi connected but no internet",
+   "Wi-Fi switches off by itself"
+  ],
+  "causes": [
+   "Wrong password",
+   "Airplane mode or Wi-Fi off",
+   "Router issue",
+   "Saved network settings corrupted"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Check basics",
+    "instruction": "Turn off Airplane mode, switch Wi-Fi off and on, and move closer to the router.",
+    "expected": "Network name appears and signal is strong."
+   },
+   {
+    "title": "Re-enter the password",
+    "instruction": "Forget the network (Android: tap the network > Forget; iPhone: tap the i icon > Forget This Network) and rejoin. Check upper and lower case characters carefully.",
+    "expected": "Phone joins the network."
+   },
+   {
+    "title": "Test another device",
+    "instruction": "If other devices also fail, restart the router (see the router guide).",
+    "expected": "You know whether the phone or the router is at fault."
+   },
+   {
+    "title": "Restart the phone",
+    "instruction": "Restart and reconnect.",
+    "expected": "Connection stable."
+   },
+   {
+    "title": "Reset network settings if nothing works",
+    "instruction": "Android: Settings > System > Reset options > Reset Wi-Fi, mobile & Bluetooth. iPhone: Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. This removes all saved Wi-Fi networks and Bluetooth pairings but not your files.",
+    "expected": "Wi-Fi works again; you must re-enter Wi-Fi passwords."
+   }
+  ],
+  "warnings": [
+   "Resetting network settings removes saved Wi-Fi passwords and pairings, so make sure you know them."
+  ],
+  "relatedIds": [
+   "g-router-no-internet",
+   "g-slow-wifi",
+   "g-wifi-connected-no-internet"
+  ],
+  "lastReviewed": "2026-09-26",
+  "keywords": [
+   "phone wifi",
+   "won't connect",
+   "authentication",
+   "saved network"
+  ]
+ },
+ {
+  "id": "g-bluetooth-headphones-not-connecting",
+  "slug": "bluetooth-headphones-not-connecting",
+  "title": "Bluetooth headphones not connecting",
+  "description": "Pair or reconnect Bluetooth headphones and earbuds with a phone or computer.",
+  "categoryId": "bluetooth-peripherals",
+  "platforms": [
+   "android",
+   "ios",
+   "windows"
+  ],
+  "symptoms": [
+   "Headphones not listed",
+   "Says paired but no sound",
+   "Only one earbud connects"
+  ],
+  "causes": [
+   "Headphones connected to another device",
+   "Low battery",
+   "Old pairing data",
+   "Not in pairing mode"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Charge them and turn off other devices",
+    "instruction": "Charge the headphones and turn off Bluetooth on other nearby devices they usually pair with.",
+    "expected": "Headphones are free to connect."
+   },
+   {
+    "title": "Enter pairing mode",
+    "instruction": "Hold the pairing button until the light flashes. Check the manual for the exact steps.",
+    "expected": "Light flashes."
+   },
+   {
+    "title": "Forget and re-pair",
+    "instruction": "In your device's Bluetooth settings choose the headphones > Forget or Remove, then scan and pair again.",
+    "expected": "They pair and connect."
+   },
+   {
+    "title": "Choose them as the audio output",
+    "instruction": "On a computer, select the headphones in the sound output list.",
+    "expected": "Sound plays through the headphones."
+   },
+   {
+    "title": "Reset the headphones",
+    "instruction": "Look up the factory-reset method in the manual. It typically clears pairings only. Re-pair afterwards.",
+    "expected": "Headphones behave like new."
+   }
+  ],
+  "relatedIds": [
+   "g-bluetooth-not-detecting-devices",
+   "g-bluetooth-keeps-disconnecting",
+   "g-windows-no-sound"
+  ],
+  "lastReviewed": "2026-09-13",
+  "keywords": [
+   "headphones",
+   "earbuds",
+   "airpods",
+   "pairing",
+   "bluetooth audio"
+  ]
+ },
+ {
+  "id": "g-phone-not-charging",
+  "slug": "phone-not-charging",
+  "title": "Phone not charging",
+  "description": "Diagnose why an Android phone or iPhone does not charge or charges very slowly.",
+  "categoryId": "charging-battery",
+  "platforms": [
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "No charging icon",
+   "Charges only at certain angles",
+   "Charges very slowly"
+  ],
+  "causes": [
+   "Faulty cable or adapter",
+   "Lint in the port",
+   "Software glitch",
+   "Damaged battery or port"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "tools": [
+   "A second cable and adapter"
+  ],
+  "steps": [
+   {
+    "title": "Swap cable, adapter and outlet",
+    "instruction": "Try a different cable, adapter and wall socket. Prefer the maker's accessories or certified ones.",
+    "expected": "Charging icon appears."
+   },
+   {
+    "title": "Inspect the port",
+    "instruction": "Power the phone off. Use a torch to look for lint. Gently remove it with a non-metal tool such as a wooden toothpick. Do not use liquids, metal pins or compressed air.",
+    "expected": "Cable fits firmly."
+   },
+   {
+    "title": "Restart or force restart",
+    "instruction": "Android: hold power and choose Restart. iPhone: press and release volume up, press and release volume down, then hold the side button until the Apple logo appears (for Face ID models and iPhone SE 3rd generation).",
+    "expected": "Phone reacts to the charger."
+   },
+   {
+    "title": "Let it charge for 30 minutes",
+    "instruction": "A deeply drained phone may take several minutes before showing a charging icon.",
+    "expected": "The phone wakes up."
+   },
+   {
+    "title": "Get the port or battery checked",
+    "instruction": "If it still does not charge, contact the manufacturer or an authorised repair shop. Do not open the phone.",
+    "expected": "You have a repair route."
+   }
+  ],
+  "warnings": [
+   "Never use a damaged cable or a phone that is swollen or smells hot."
+  ],
+  "relatedIds": [
+   "g-phone-battery-draining-fast",
+   "g-phone-overheating",
+   "g-laptop-battery-not-charging"
+  ],
+  "lastReviewed": "2026-09-23",
+  "keywords": [
+   "won't charge",
+   "charging port",
+   "cable",
+   "slow charging"
+  ]
+ },
+ {
+  "id": "g-mobile-hotspot-not-working",
+  "slug": "mobile-hotspot-not-working",
+  "title": "Mobile hotspot not working",
+  "description": "Share your phone's mobile data with a laptop or other device when the hotspot fails.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "Hotspot network not visible",
+   "Devices connect but get no internet",
+   "Hotspot switches off"
+  ],
+  "causes": [
+   "Plan does not allow tethering",
+   "Mobile data off",
+   "Battery saver",
+   "Compatibility settings"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "prerequisites": [
+   "A mobile plan that includes hotspot data"
+  ],
+  "steps": [
+   {
+    "title": "Check mobile data and plan",
+    "instruction": "Confirm the phone itself can browse on mobile data and your plan includes tethering.",
+    "expected": "Phone has internet without Wi-Fi."
+   },
+   {
+    "title": "Turn the hotspot off and on",
+    "instruction": "Android: Settings > Network & internet > Hotspot & tethering. iPhone: Settings > Personal Hotspot. Toggle off and on and keep the settings screen open while connecting.",
+    "expected": "Network becomes visible."
+   },
+   {
+    "title": "Adjust compatibility settings",
+    "instruction": "iPhone: turn on Maximize Compatibility. Android: switch the AP band to 2.4 GHz. Older laptops may not see 5 GHz.",
+    "expected": "Laptop detects the hotspot."
+   },
+   {
+    "title": "Turn off battery saver",
+    "instruction": "Battery saver can disable hotspot. Switch it off or plug in the phone.",
+    "expected": "Hotspot stays active."
+   },
+   {
+    "title": "Reset network settings",
+    "instruction": "Only if needed, reset network settings (see the phone Wi-Fi guide). This removes saved Wi-Fi networks.",
+    "expected": "Hotspot works after setting it up again."
+   }
+  ],
+  "relatedIds": [
+   "g-phone-cannot-connect-wifi",
+   "g-wifi-connected-no-internet"
+  ],
+  "lastReviewed": "2026-09-27",
+  "keywords": [
+   "hotspot",
+   "tethering",
+   "personal hotspot",
+   "share internet"
+  ]
+ },
+ {
+  "id": "g-phone-computer-file-transfer",
+  "slug": "phone-computer-file-transfer",
+  "title": "Files not transferring between phone and computer",
+  "description": "Make a computer see a phone's files over USB so photos and documents can be copied.",
+  "categoryId": "android",
+  "platforms": [
+   "android",
+   "ios",
+   "windows",
+   "macos"
+  ],
+  "symptoms": [
+   "Phone charges but is not shown on the computer",
+   "Empty folders in File Explorer",
+   "'Trust this computer' prompt never appears"
+  ],
+  "causes": [
+   "USB mode set to charging only",
+   "Charge-only cable",
+   "Phone locked",
+   "Missing Apple software on Windows"
+  ],
+  "difficulty": "beginner",
+  "minutes": 15,
+  "steps": [
+   {
+    "title": "Use a data-capable cable",
+    "instruction": "Some cables only charge. Try the cable that came with the phone or another data cable.",
+    "expected": "The computer plays a connection sound."
+   },
+   {
+    "title": "Unlock the phone and allow access",
+    "instruction": "Android: swipe down, tap the USB notification and choose File transfer. iPhone: tap Trust when asked and enter your passcode.",
+    "expected": "Phone appears as a drive or in the Photos app."
+   },
+   {
+    "title": "Use the right app",
+    "instruction": "Windows: This PC for Android or Photos > Import for iPhone. Mac with Android: use Android File Transfer from Google. Mac with iPhone: use Finder, Photos or AirDrop.",
+    "expected": "You can browse and copy files."
+   },
+   {
+    "title": "Update and restart",
+    "instruction": "Restart phone and computer, and install system updates. On Windows with iPhone, install Apple Devices from the Microsoft Store.",
+    "expected": "Device is detected."
+   },
+   {
+    "title": "Use a wireless alternative",
+    "instruction": "Send files with AirDrop (Apple), Quick Share (Android and Windows) or a trusted cloud service.",
+    "expected": "Files arrive without a cable."
+   }
+  ],
+  "relatedIds": [
+   "g-usb-device-not-recognized",
+   "g-iphone-storage-almost-full"
+  ],
+  "lastReviewed": "2026-09-15",
+  "keywords": [
+   "transfer",
+   "usb",
+   "photos",
+   "file transfer",
+   "android file transfer",
+   "trust this computer"
+  ]
+ },
+ {
+  "id": "g-router-no-internet",
+  "slug": "router-no-internet",
+  "title": "Router appears connected but there is no internet",
+  "description": "Restore internet when every device shows Wi-Fi but nothing loads.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "any"
+  ],
+  "symptoms": [
+   "All devices show Wi-Fi but no websites load",
+   "Router internet light is red or off",
+   "Problem started after a power cut"
+  ],
+  "causes": [
+   "Provider outage",
+   "Modem or router needs a restart",
+   "Loose or damaged cable",
+   "Account or billing issue"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "tools": [
+   "Phone with mobile data to check provider status"
+  ],
+  "steps": [
+   {
+    "title": "Check for an outage",
+    "instruction": "Use your phone's mobile data to check your provider's outage page or social account, or call them.",
+    "expected": "You know if there is an area outage."
+   },
+   {
+    "title": "Check cables and lights",
+    "instruction": "Make sure the cable from the wall or modem is firmly seated in the router's internet (WAN) port, and note which lights are red or off.",
+    "expected": "Cables secure and lights noted."
+   },
+   {
+    "title": "Restart modem and router in order",
+    "instruction": "Unplug power from the modem and router. Wait 60 seconds. Plug in the modem first, wait until its lights are stable (about 2 minutes), then plug in the router and wait 2 minutes.",
+    "expected": "The internet light turns solid and devices get online."
+   },
+   {
+    "title": "Test with a cable",
+    "instruction": "Connect a computer to the router with an Ethernet cable. If it works, the problem is Wi-Fi and not the connection.",
+    "expected": "You can separate wired and wireless faults."
+   },
+   {
+    "title": "Contact your provider",
+    "instruction": "If lights remain red after a restart, give your provider the light pattern. Do not hold the router reset button unless instructed because it erases settings.",
+    "expected": "Provider can diagnose the line."
+   }
+  ],
+  "warnings": [
+   "Resetting the router to factory defaults erases the Wi-Fi name, password and any provider login details."
+  ],
+  "relatedIds": [
+   "g-wifi-connected-no-internet",
+   "g-slow-wifi",
+   "g-dns-resolution-errors"
+  ],
+  "lastReviewed": "2026-09-29",
+  "keywords": [
+   "router",
+   "modem",
+   "no internet",
+   "outage",
+   "red light",
+   "isp"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-slow-wifi",
+  "slug": "slow-wifi",
+  "title": "Slow Wi-Fi connection",
+  "description": "Improve slow or unstable Wi-Fi speeds at home using placement, bands and device checks.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "any"
+  ],
+  "symptoms": [
+   "Videos buffer",
+   "Pages load slowly",
+   "Slow only in certain rooms"
+  ],
+  "causes": [
+   "Distance or walls",
+   "Crowded channels",
+   "Many devices using bandwidth",
+   "Old router"
+  ],
+  "difficulty": "beginner",
+  "minutes": 25,
+  "steps": [
+   {
+    "title": "Test speed near the router",
+    "instruction": "Run a speed test in the same room as the router, then in the slow room. Compare with your plan's advertised speed.",
+    "expected": "You know if distance or the plan is the issue."
+   },
+   {
+    "title": "Move the router",
+    "instruction": "Place it in a central, raised, open spot away from microwaves, thick walls and metal.",
+    "expected": "Signal improves in far rooms."
+   },
+   {
+    "title": "Use the right band",
+    "instruction": "Use 5 GHz for speed at short range and 2.4 GHz for range through walls.",
+    "expected": "Closer devices get faster speeds."
+   },
+   {
+    "title": "Reduce device load",
+    "instruction": "Pause large downloads, cloud backups and streaming on other devices.",
+    "expected": "Speed rises for the device you are using."
+   },
+   {
+    "title": "Restart and update",
+    "instruction": "Restart the router and install firmware updates through its official admin page.",
+    "expected": "More stable connection."
+   }
+  ],
+  "alternatives": [
+   "A mesh Wi-Fi system or wired access point can help large homes."
+  ],
+  "relatedIds": [
+   "g-router-no-internet",
+   "g-wifi-connected-no-internet",
+   "g-phone-cannot-connect-wifi"
+  ],
+  "lastReviewed": "2026-09-06",
+  "keywords": [
+   "slow",
+   "speed",
+   "buffering",
+   "wifi signal",
+   "lag",
+   "weak signal"
+  ],
+  "popular": true
+ },
+ {
+  "id": "g-dns-resolution-errors",
+  "slug": "dns-resolution-errors",
+  "title": "DNS resolution errors",
+  "description": "Fix 'DNS_PROBE_FINISHED_NXDOMAIN' and similar errors when sites will not load by name.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "windows",
+   "macos",
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "Error saying the server's DNS address could not be found",
+   "Sites load by IP but not by name",
+   "Some sites load, others do not"
+  ],
+  "causes": [
+   "Provider DNS server problems",
+   "Stale DNS cache",
+   "Misconfigured network settings",
+   "VPN or filter interfering"
+  ],
+  "difficulty": "intermediate",
+  "minutes": 20,
+  "steps": [
+   {
+    "title": "Test another device and site",
+    "instruction": "Try another site and device. If all fail, restart the router first.",
+    "expected": "You know if the fault is local."
+   },
+   {
+    "title": "Flush the DNS cache",
+    "instruction": "Windows: run ipconfig /flushdns in Command Prompt. macOS: run sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder. These only clear stored lookups.",
+    "expected": "Cache cleared."
+   },
+   {
+    "title": "Turn off VPN or filter temporarily",
+    "instruction": "Pause any VPN or DNS filter you installed yourself, then retry. Turn it back on afterwards.",
+    "expected": "Sites load if it was interfering."
+   },
+   {
+    "title": "Try a public DNS server",
+    "instruction": "Windows: Settings > Network & internet > your network > DNS server assignment > Edit > Manual, set Preferred DNS to 1.1.1.1 and Alternate to 8.8.8.8 (Cloudflare and Google).",
+    "expected": "Websites load."
+   },
+   {
+    "title": "Return to Automatic if it did not help",
+    "instruction": "Change DNS back to Automatic (DHCP) and contact your provider.",
+    "expected": "Original settings are restored."
+   }
+  ],
+  "warnings": [
+   "Public DNS is optional and means the chosen company sees your domain lookups. Pick one you trust."
+  ],
+  "recovery": [
+   "Set DNS server assignment back to Automatic."
+  ],
+  "relatedIds": [
+   "g-wifi-connected-no-internet",
+   "g-router-no-internet"
+  ],
+  "lastReviewed": "2026-09-24",
+  "keywords": [
+   "dns",
+   "nxdomain",
+   "server not found",
+   "dns probe",
+   "flushdns"
+  ]
+ },
+ {
+  "id": "g-laptop-cannot-detect-wifi",
+  "slug": "laptop-cannot-detect-wifi",
+  "title": "Laptop unable to detect a wireless network",
+  "description": "Bring back the list of Wi-Fi networks on a laptop that shows none.",
+  "categoryId": "wifi-internet",
+  "platforms": [
+   "windows",
+   "macos"
+  ],
+  "symptoms": [
+   "No networks listed",
+   "Wi-Fi switch missing or greyed out",
+   "Only some networks appear"
+  ],
+  "causes": [
+   "Airplane mode or hardware Wi-Fi switch",
+   "Wireless adapter disabled",
+   "Driver problem",
+   "Router set to hidden or a band the laptop cannot see"
+  ],
+  "difficulty": "intermediate",
+  "minutes": 25,
+  "steps": [
+   {
+    "title": "Turn off Airplane mode and check keys",
+    "instruction": "Disable Airplane mode in Settings. Also look for a Wi-Fi key (Fn plus an antenna or aeroplane symbol) or a physical switch on the side.",
+    "expected": "The Wi-Fi toggle can be turned on."
+   },
+   {
+    "title": "Check the adapter",
+    "instruction": "Windows: Settings > Network & internet > Advanced network settings. If Wi-Fi is Disabled, choose Enable.",
+    "expected": "Wi-Fi adapter shows Enabled."
+   },
+   {
+    "title": "Restart the laptop and router",
+    "instruction": "Restart both. If other devices cannot see the network, the router is the cause.",
+    "expected": "The network appears."
+   },
+   {
+    "title": "Update or reinstall the Wi-Fi driver",
+    "instruction": "Install updates via Windows Update or the maker's support site. In Device Manager > Network adapters, right-click the Wi-Fi adapter > Uninstall device, then restart.",
+    "expected": "Driver reinstalls and networks appear."
+   },
+   {
+    "title": "Use the network reset only if needed",
+    "instruction": "Windows: Settings > Network & internet > Advanced network settings > Network reset. This removes saved networks and reinstalls adapters.",
+    "expected": "Wi-Fi settings return to defaults; you will re-enter passwords."
+   }
+  ],
+  "warnings": [
+   "Network reset removes saved Wi-Fi networks and VPN settings."
+  ],
+  "relatedIds": [
+   "g-wifi-connected-no-internet",
+   "g-router-no-internet",
+   "g-bluetooth-not-detecting-devices"
+  ],
+  "lastReviewed": "2026-09-27",
+  "keywords": [
+   "no wifi networks",
+   "wifi missing",
+   "adapter",
+   "airplane mode",
+   "wireless"
+  ]
+ },
+ {
+  "id": "g-bluetooth-keeps-disconnecting",
+  "slug": "bluetooth-keeps-disconnecting",
+  "title": "Bluetooth connection frequently disconnecting",
+  "description": "Stabilise Bluetooth audio, mice and keyboards that keep dropping their connection.",
+  "categoryId": "bluetooth-peripherals",
+  "platforms": [
+   "windows",
+   "android",
+   "ios"
+  ],
+  "symptoms": [
+   "Audio cuts out",
+   "Mouse stutters",
+   "Device disconnects after a few minutes"
+  ],
+  "causes": [
+   "Low battery in accessory",
+   "Interference or distance",
+   "Power-saving settings",
+   "Outdated drivers or firmware"
+  ],
+  "difficulty": "beginner",
+  "minutes": 20,
+  "steps": [
+   {
+    "title": "Charge the accessory and shorten the distance",
+    "instruction": "Charge or replace batteries and keep the devices close with no thick obstacles.",
+    "expected": "Fewer drops."
+   },
+   {
+    "title": "Reduce interference",
+    "instruction": "Move away from USB 3 hubs, Wi-Fi routers and microwaves; connect fewer Bluetooth devices at once.",
+    "expected": "Connection becomes stable."
+   },
+   {
+    "title": "Disable Bluetooth power saving",
+    "instruction": "Windows: Device Manager > Bluetooth adapter > Properties > Power Management > untick 'Allow the computer to turn off this device to save power'.",
+    "expected": "The adapter stays active."
+   },
+   {
+    "title": "Re-pair the device",
+    "instruction": "Remove it from the saved list and pair again.",
+    "expected": "Fresh pairing stays connected."
+   },
+   {
+    "title": "Update software",
+    "instruction": "Install OS, driver and accessory firmware updates from official sources.",
+    "expected": "Problem no longer appears."
+   }
+  ],
+  "relatedIds": [
+   "g-bluetooth-not-detecting-devices",
+   "g-bluetooth-headphones-not-connecting"
+  ],
+  "lastReviewed": "2026-09-18",
+  "keywords": [
+   "bluetooth",
+   "disconnect",
+   "drops",
+   "cuts out",
+   "stutter"
+  ]
+ }
+]
